@@ -13,6 +13,6 @@ class brandProvider extends ChangeNotifier {
   }
   tampilkanDataBrand() async {
     brandModel = await _BrandService.tampikanBrand();
-    print(brandModel.data?.length);
+    print(brandModel.data!.length);
   }
 }
