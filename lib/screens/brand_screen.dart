@@ -32,17 +32,17 @@ class _BrandScreenState extends State<BrandScreen> {
                     SizedBox(
                       width: MediaQuery.of(context).size.aspectRatio,
                       child: Image.network(
-                        provider.brandModel.data![index].imageLink='https://d3t32hsnjxo7q6.cloudfront.net/i/991799d3e70b8856686979f8ff6dcfe0_ra,w158,h184_pa,w158,h184.png',
+                        provider.brandModel.data![index].imageLink!,
                         fit: BoxFit.cover,
                       ),
                     ),
                     Text(
-                   provider.brandModel.data![index].name??'-', 
+                   provider.brandModel.data![index].name!, 
                    style: const TextStyle(
                     fontSize: 24,
                    ), 
                     ),
-                    Text(provider.brandModel.data![index].description??'-'),
+                    Text(provider.brandModel.data![index].description!),
                   ],
                 ),
               );
