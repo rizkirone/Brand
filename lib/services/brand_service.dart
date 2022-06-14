@@ -8,6 +8,7 @@ class BrandService {
       'https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline');
     return brand_model.fromJson({"data":response.data});
     }on DioError catch (e){
+            // ignore: avoid_print
       print(e);
     return brand_model.fromJson({});
   }
