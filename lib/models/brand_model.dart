@@ -30,7 +30,7 @@ class Data {
   String? productLink;
   String? websiteLink;
   String? description;
-  int? rating;
+
   String? productType;
   String? createdAt;
   String? updatedAt;
@@ -46,7 +46,7 @@ class Data {
       this.productLink,
       this.websiteLink,
       this.description,
-      this.rating,
+ 
       this.productType,
       this.createdAt,
       this.updatedAt,
@@ -62,7 +62,7 @@ class Data {
     productLink = json['product_link'];
     websiteLink = json['website_link'];
     description = json['description'];
-    rating = json['rating'];
+
     productType = json['product_type'];
     createdAt = json['created_at'];
     updatedAt = json['updated_at'];
@@ -80,7 +80,7 @@ class Data {
     data['product_link'] = this.productLink;
     data['website_link'] = this.websiteLink;
     data['description'] = this.description;
-    data['rating'] = this.rating;
+  
     data['product_type'] = this.productType;
     data['created_at'] = this.createdAt;
     data['updated_at'] = this.updatedAt;
