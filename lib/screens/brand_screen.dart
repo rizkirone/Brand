@@ -30,7 +30,7 @@ class _BrandScreenState extends State<BrandScreen> {
                 title: Column(
                   children: [
                     SizedBox(
-                      width: MediaQuery.of(context).size.aspectRatio,
+                      width: MediaQuery.of(context).size.height,
                       child: Image.network(
                         provider.brandModel.data![index].imageLink!,
                         fit: BoxFit.cover,
