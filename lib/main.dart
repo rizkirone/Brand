@@ -9,14 +9,15 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
+  
   @override
   Widget build(BuildContext context) {
-    var changeNotifierProvider = ChangeNotifierProvider<brandProvider>(
-          create: (context) => brandProvider(),
-        );
+   
     return MultiProvider(
       providers: [
-        changeNotifierProvider,
+        ChangeNotifierProvider(
+          create: (context) => BrandProvider(),
+        ),
       ],
       child: const MaterialApp(
         home: BrandScreen(),
